@@ -25,7 +25,7 @@ nsis:
   createDesktopShortcut: always
   allowToChangeInstallationDirectory: true
   oneClick: false
-  license: build/license_zh.txt
+  license: build/license_zh_CN.txt
 mac:
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
