@@ -58,5 +58,10 @@ publish:
   provider: github
   owner: m15237195947@163.com
   repo: mineru-client
+releaseInfo:
+  releaseName: '版本更新'
+  releaseNotes: |
+    这是更新日志
+    测试测试
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/
