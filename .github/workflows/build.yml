@@ -35,9 +35,7 @@ jobs:
 
       - name: Build Electron App for windows
         if: matrix.os == 'windows-latest'
-        run: |
-          yarn build:win
-          yarn build:win-32
+        run: yarn build:win
 
       - name: Build Electron App for macos
         if: matrix.os == 'macos-latest'
