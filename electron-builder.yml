@@ -1,4 +1,4 @@
-appId: com.electron.app
+appId: mineru-client
 productName: mineru-client
 directories:
   buildResources: build
@@ -28,7 +28,7 @@ nsis:
   oneClick: false
   license: license_zh_CN.txt
 mac:
-  artifactName: ${name}-${version}.${ext}
+  artifactName: ${name}.${ext}
   entitlements: build/entitlements.mac.plist
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
@@ -49,7 +49,7 @@ mac:
 #dmg:
 #  artifactName: ${name}-${version}.${ext}
 pkg:
-  artifactName: ${name}-${version}.${ext}
+  artifactName: ${name}.${ext}
   allowAnywhere: true
 linux:
   target:
