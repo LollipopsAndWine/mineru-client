@@ -16,9 +16,9 @@ win:
   executableName: mineru-client
   target:
     - target: nsis
-      arch: ia32
-    - target: nsis
-      arch: x64
+      arch:
+        - ia32
+        - x64
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -40,7 +40,7 @@ mac:
       arch:
         - arm64
         - x64
-    - target: zip
+    - target: pkg
       arch:
         - arm64
         - x64
