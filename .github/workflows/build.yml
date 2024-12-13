@@ -39,9 +39,7 @@ jobs:
 
       - name: Build Electron App for macos
         if: matrix.os == 'macos-latest'
-        run: |
-          yarn build:mac
-          yarn build:mac-arm
+        run: yarn build:mac
 
       - name: Build Electron App for linux
         if: matrix.os == 'ubuntu-latest'
