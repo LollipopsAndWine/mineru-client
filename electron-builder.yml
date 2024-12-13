@@ -37,15 +37,17 @@ mac:
     - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
   notarize: false
   target:
-    - target: dmg
-      arch:
-        - arm64
-        - x64
+#    - target: dmg
+#      arch:
+#        - arm64
+#        - x64
     - target: pkg
       arch:
         - arm64
         - x64
-dmg:
+#dmg:
+#  artifactName: ${name}-${version}.${ext}
+pkg:
   artifactName: ${name}-${version}.${ext}
 linux:
   target:
