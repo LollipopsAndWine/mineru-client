@@ -26,7 +26,7 @@ nsis:
   createDesktopShortcut: always
   allowToChangeInstallationDirectory: true
   oneClick: false
-  license: build/license_zh_CN.txt
+  license: ./license_zh_CN.txt
 mac:
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
@@ -46,9 +46,6 @@ mac:
         - x64
 dmg:
   artifactName: ${name}-${version}.${ext}
-  license:
-    en: build/license_en.txt
-    zh-CN: build/license_zh-CN.txt
 linux:
   target:
     - AppImage
