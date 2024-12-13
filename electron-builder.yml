@@ -28,6 +28,7 @@ nsis:
   oneClick: false
   license: license_zh_CN.txt
 mac:
+  artifactName: ${name}-${version}.${ext}
   entitlements: build/entitlements.mac.plist
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
@@ -48,6 +49,7 @@ mac:
 #dmg:
 #  artifactName: ${name}-${version}.${ext}
 pkg:
+  artifactName: ${name}-${version}.${ext}
   allowAnywhere: true
 linux:
   target:
