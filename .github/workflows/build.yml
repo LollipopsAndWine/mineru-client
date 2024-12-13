@@ -58,7 +58,7 @@ jobs:
       - name: Cleanup Artifacts for Linux
         if: matrix.os == 'ubuntu-latest'
         run: |
-          npx del-cli "dist/*" "!dist/(*.deb|*.snap|latest*.yml)"
+          npx del-cli "dist/*" "!dist/(*.deb|*.AppImage|*.snap|latest*.yml)"
 
       - name: upload artifacts
         uses: actions/upload-artifact@v4
