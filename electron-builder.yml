@@ -28,6 +28,7 @@ nsis:
   oneClick: false
   license: license_zh_CN.txt
 mac:
+  entitlements: build/entitlements.mac.plist
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
     - NSCameraUsageDescription: Application requests access to the device's camera.
@@ -45,8 +46,6 @@ mac:
         - arm64
         - x64
 dmg:
-  artifactName: ${name}-${version}.${ext}
-pkg:
   artifactName: ${name}-${version}.${ext}
 linux:
   target:
