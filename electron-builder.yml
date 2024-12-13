@@ -9,6 +9,7 @@ files:
   - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
   - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+asar: true
 asarUnpack:
   - resources/**
 win:
@@ -45,6 +46,9 @@ mac:
         - x64
 dmg:
   artifactName: ${name}-${version}.${ext}
+  license:
+    en: build/license_en.txt
+    zh-CN: build/license_zh-CN.txt
 linux:
   target:
     - AppImage
