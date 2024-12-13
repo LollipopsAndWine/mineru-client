@@ -1,4 +1,4 @@
-appId: mineru-client-${version}
+appId: com.electron.app
 productName: mineru-client
 directories:
   buildResources: build
@@ -28,7 +28,6 @@ nsis:
   oneClick: false
   license: license_zh_CN.txt
 mac:
-  artifactName: ${name}-${version}.${ext}
   entitlements: build/entitlements.mac.plist
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
@@ -38,19 +37,12 @@ mac:
     - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
   notarize: false
   target:
-#    - target: dmg
-#      arch:
-#        - arm64
-#        - x64
-    - target: pkg
+    - target: dmg
       arch:
         - arm64
         - x64
-#dmg:
-#  artifactName: ${name}-${version}.${ext}
-pkg:
+dmg:
   artifactName: ${name}-${version}.${ext}
-  allowAnywhere: true
 linux:
   target:
     - AppImage
