@@ -48,7 +48,7 @@ mac:
 #dmg:
 #  artifactName: ${name}-${version}.${ext}
 pkg:
-  artifactName: ${name}-${version}.${ext}
+  allowAnywhere: true
 linux:
   target:
     - AppImage
