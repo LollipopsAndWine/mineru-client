@@ -1,10 +1,12 @@
 import {is} from '@electron-toolkit/utils'
-import {dialog} from 'electron'
+import {app, dialog} from 'electron'
 import {autoUpdater} from 'electron-updater'
 import logger from 'electron-log'
 
 
 export function autoUpdateApp() {
+  app.commandLine.appendSwitch('disable-http2');
+  autoUpdater.requestHeaders = {'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0'}
   autoUpdater.logger = logger
 // 自动下载更新
   autoUpdater.autoDownload = false
