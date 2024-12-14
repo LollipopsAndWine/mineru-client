@@ -55,7 +55,7 @@ appImage:
 npmRebuild: false
 publish:
   provider: github
-  owner: m15237195947@163.com
+  owner: LollipopsAndWine
   repo: mineru-client
 releaseInfo:
   releaseName: '版本更新'

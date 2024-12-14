@@ -1,3 +1,5 @@
-provider: generic
-url: https://example.com/auto-updates
+provider: github
+owner: LollipopsAndWine
+repo: mineru-client
+releaseType: release
 updaterCacheDirName: mineru-client-updater
